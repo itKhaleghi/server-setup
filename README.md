@@ -46,7 +46,7 @@ A comprehensive server setup automation script with enhanced security configurat
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/itKhaleghi/server-setup.git
 cd server-setup
 
 # Make scripts executable
