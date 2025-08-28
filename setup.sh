@@ -157,14 +157,15 @@ main_menu() {
         echo "4. 🌐 WordPress (CMS)"
         echo "5. ⚡ Golang (Gin Framework)"
         echo "6. 🟢 Node.js (Express)"
+        echo "7. 🌊 V2Ray (Proxy Server)"
         echo ""
-        echo "7. 📊 System Status"
-        echo "8. 📖 Help & Information"
-        echo "9. 🧹 Cleanup & Reset"
+        echo "8. 📊 System Status"
+        echo "9. 📖 Help & Information"
+        echo "10. 🧹 Cleanup & Reset"
         echo "0. 🚪 Exit"
         echo ""
         
-        PS3="Select an option (0-9): "
+        PS3="Select an option (0-10): "
         read -p "Enter your choice: " choice
         
         case $choice in
@@ -187,13 +188,16 @@ main_menu() {
                 install_module "Node.js" "modules/nodejs.sh"
                 ;;
             7)
+                install_module "V2Ray" "modules/v2ray.sh"
+                ;;
+            8)
                 show_module_status
                 read -p "Press Enter to continue..."
                 ;;
-            8)
+            9)
                 show_help
                 ;;
-            9)
+            10)
                 print_status $YELLOW "🧹 Cleanup options will be implemented in future versions"
                 read -p "Press Enter to continue..."
                 ;;

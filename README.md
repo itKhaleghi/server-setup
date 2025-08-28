@@ -109,6 +109,24 @@ systemctl restart openvpn@server
 tail -f /var/log/openvpn.log
 ```
 
+### V2Ray
+```bash
+# Generate client configuration
+v2ray-client-config vmess <client_name>
+
+# Show QR code for mobile
+v2ray-client-config qr <client_name>
+
+# Check status
+v2ray-status
+
+# Manage service
+v2ray-manage [start|stop|restart|status|logs|config]
+
+# View logs
+tail -f /var/log/v2ray/access.log
+```
+
 ## 🌐 Network Configuration
 
 ### WireGuard
